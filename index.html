@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+    <!-- 
+<link rel="stylesheet" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!------------------------------------------------------------------------------------------------------------------
+----  This group must stay in this order
+------------------------------------------------------------------------------------------------------------------->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css" />
+    <title>Day Scheduler</title>
+</head>
+
+
+
+
+<body>
+    <div id="container">
+        <div id="heading">
+            <h1 id="h1-first"> WORK DAY SCHEDULER</h1>
+            A simple calendar app for scheduling your work day
+            <div id="date"></div>
+
+        </div>
+
+        <br>
+        <hr class="one">
+
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-8am" class="timeSlots" data-time="08:00 AM">
+                     8:00 AM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-1" class="items">
+                    <textarea id="timeSlot0" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn1" class="save-buttons">
+                    <button id="btn-1"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-9am" class="timeSlots" data-time="09:00 AM">
+                     9:00 AM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-2" class="items">
+                    <textarea id="timeSlot1" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" >
+                <div id="save-btn2" class="save-buttons">
+                    <button id="btn-2"  type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-10am" class="timeSlots" data-time="10:00 AM">
+                     10:00 AM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-3" class="items">
+                    <textarea id="timeSlot2" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn3" class="save-buttons">
+                    <button id="btn-3"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-11am" class="timeSlots" data-time="11:00 AM">
+                     11:00 AM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-4" class="items">
+                    <textarea id="timeSlot3" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn4" class="save-buttons">
+                    <button id="btn-4"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-12pm" class="timeSlots" data-time="12:00 PM">
+                     12:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-5" class="items">
+                    <textarea id="timeSlot4" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn5" class="save-buttons">
+                    <button id="btn-5"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-1pm" class="timeSlots" data-time="01:00 PM">
+                     1:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-6" class="items">
+                    <textarea id="timeSlot5" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn6" class="save-buttons">
+                    <button id="btn-6"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-2pm" class="timeSlots" data-time="02:00 pM">
+                     2:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-7" class="items">
+                    <textarea id="timeSlot6" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn7" class="save-buttons">
+                    <button id="btn-7"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-3pm" class="timeSlots" data-time="03:00 PM">
+                     3:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-8" class="items">
+                    <textarea id="timeSlot7" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn8" class="save-buttons">
+                    <button id="btn-8"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-4pm" class="timeSlots" data-time="04:00 PM">
+                     4:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-9" class="items">
+                    <textarea id="timeSlot8" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn9" class="save-buttons">
+                    <button id="btn-9"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-5pm" class="timeSlots" data-time="05:00 PM">
+                     5:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-10" class="items">
+                    <textarea id="timeSlot9" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn10" class="save-buttons">
+                    <button id="btn-10"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 time">
+                <div id="time-6pm" class="timeSlots" data-time="06:00 PM">
+                     6:00 PM
+
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="item-11" class="items">
+                    <textarea id="timeSlot10" type="text" class="form-control inp" rows="2"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-2 saveBtns" id="saveButtons">
+                <div id="save-btn11" class="save-buttons">
+                    <button id="btn-11"   type="button" class="btn btn-primary"><i class="far fa-save"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
